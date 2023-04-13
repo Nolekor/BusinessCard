@@ -5,11 +5,95 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 700px;
+}
+.picture-container,
+.btn-container,
+.about-container,
+.footer-container {
+  max-width: 400px;
+  margin: auto;
+  width: 100%;
+}
+.picture-container {
+  text-align: center;
+  background-color: #242424;
+}
+.portfolio-img {
+  width: 100%;
+}
+.header--name {
+  margin: 0;
+  padding: 0;
+}
+.header--job {
+  margin-top: 0;
+  color: #f3bf99;
+}
+.header--link {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #47428d;
+}
+.header--link:visited {
+  color: #ffffff;
+}
+
+.btn-container {
+  text-align: center;
+  background-color: #242424;
+}
+
+.facebook,
+.linkedin {
+  margin: 40px 10px 40px 10px;
+  padding: 13px 23px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.facebook {
+  background-color: #4267b2;
+}
+.linkedin {
+  background-color: #ffffff;
+  color: #0077b5;
+  font-weight: bolder;
+}
+.about-container {
+  background-color: #242424;
+}
+
+.about-container > h3 {
+  margin-top: 0px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.about-container > p {
+  margin-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #161619;
 }
